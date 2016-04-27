@@ -23,6 +23,8 @@ import uta.mav.appoint.beans.CreateAdvisorBean;
 import uta.mav.appoint.beans.GetSet;
 import uta.mav.appoint.db.command.AddAppointmentType;
 import uta.mav.appoint.db.command.AddTimeSlot;
+import uta.mav.appoint.db.command.AddToWaitList;
+import uta.mav.appoint.db.command.ChangePassword;
 import uta.mav.appoint.db.command.CheckTimeSlot;
 import uta.mav.appoint.db.command.CheckUser;
 import uta.mav.appoint.db.command.CreateAdvisor;
@@ -39,13 +41,16 @@ import uta.mav.appoint.db.command.GetAllStudentAppointments;
 import uta.mav.appoint.db.command.GetAppointment;
 import uta.mav.appoint.db.command.GetAppointmentById;
 import uta.mav.appoint.db.command.GetNotificationStatus;
+import uta.mav.appoint.db.command.GetSecurityQuestions;
 import uta.mav.appoint.db.command.GetSetting;
 import uta.mav.appoint.db.command.GetUser;
+import uta.mav.appoint.db.command.GetUserFromWaitlist;
 import uta.mav.appoint.db.command.GetUserID;
 import uta.mav.appoint.db.command.SQLCmd;
 import uta.mav.appoint.db.command.SearchAdvisor;
 import uta.mav.appoint.db.command.UpdateAdvisor;
 import uta.mav.appoint.db.command.UpdateAppointment;
+import uta.mav.appoint.db.command.UpdateDefaulterList;
 import uta.mav.appoint.db.command.UpdateNotificationStatus;
 import uta.mav.appoint.db.command.UpdateSetting;
 import uta.mav.appoint.db.command.UpdateStudentPassword;
@@ -64,7 +69,7 @@ public class RDBImpl implements DBImplInterface {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			String jdbcUrl = "jdbc:mysql://localhost:3306/mavappoint";
 			String userid = "root";
-			String password = "Kc@24466274";
+			String password = "admin";
 			Connection conn = DriverManager.getConnection(jdbcUrl, userid, password);
 			return conn;
 		} catch (Exception e) {
@@ -648,5 +653,93 @@ public class RDBImpl implements DBImplInterface {
 		}
 		cmd.execute();
 		return (String) cmd.getResult().get(0);
+	}
+
+	@Override
+	public GetSet getSecurityQuestions(String email) throws SQLException {
+		GetSet questions = null;
+		try {
+			SQLCmd cmd = new GetSecurityQuestions(email);
+			cmd.execute();
+			if (cmd.getResult().size() > 0) {
+				questions = (GetSet) (cmd.getResult()).get(0);
+			}
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+		return questions;
+	}
+
+	@Override
+	public int changePassword(String email, String newPassword, String validated) throws SQLException {
+		int result= 0;
+		try {
+			SQLCmd cmd = new ChangePassword(email,newPassword, validated);
+			cmd.execute();
+			if (cmd.getResult().size() > 0) {
+				result = (int) (cmd.getResult()).get(0);
+			}
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+		return result;
+	}
+	
+	public int updateWaitlist(String username, String useremail) throws SQLException{
+		int result= 0;
+		try {
+			SQLCmd cmd = new AddToWaitList(username,useremail);
+			cmd.execute();
+			if (cmd.getResult().size() > 0) {
+				result = (int) (cmd.getResult()).get(0);
+			}
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+		return result;
+	}
+
+	@Override
+	public ArrayList<Appointment> getAllAppointments() throws SQLException {
+		ArrayList<Appointment> appointments = null;
+		try {
+			SQLCmd cmd = new GetAppointment();
+			cmd.execute();
+			if (cmd.getResult().size() > 0) {
+				appointments = (ArrayList<Appointment>) (cmd.getResult()).get(0);
+			}
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+		return appointments;
+	}
+
+	@Override
+	public ArrayList<String> getWaitlistUsers() throws SQLException {
+		ArrayList<String> waitlist = null;
+		try {
+			SQLCmd cmd = new GetUserFromWaitlist();
+			cmd.execute();
+			if (cmd.getResult().size() > 0) {
+				waitlist = (ArrayList<String>) (cmd.getResult()).get(0);
+			}
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+		return waitlist;
+	}
+	
+	public int updateDefaulterList(String useremail) throws SQLException{
+		int result= 0;
+		try {
+			SQLCmd cmd = new UpdateDefaulterList(useremail);
+			cmd.execute();
+			if (cmd.getResult().size() > 0) {
+				result = (int) (cmd.getResult()).get(0);
+			}
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+		return result;
 	}
 }

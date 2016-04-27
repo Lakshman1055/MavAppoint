@@ -6,6 +6,9 @@ response.setHeader("Refresh", 30 + "; URL = index");
 	if (array != null){ %>	    		
 <div class="container">
 	<div class="page-header">
+	<div>
+	<a href="addtowaitlist"><input type="button" value="Add to waitlist"/></a>
+	</div>
 		<div class="pull-right form-inline">
 			<div class="btn-group">
 				 	<form action="advising" method="post" name="advisor_form">

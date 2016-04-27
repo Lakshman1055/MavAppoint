@@ -44,7 +44,7 @@ public class AdvisingServlet extends HttpServlet{
 				if (schedules.size() != 0){
 					session.setAttribute("schedules", schedules);
 				}
-				ArrayList<Object> appointments = dbm.getAppointments(user);
+				ArrayList<Appointment> appointments = dbm.getAllAppointments();
 				if (appointments.size() != 0){
 					session.setAttribute("appointments", appointments);
 				}

@@ -69,6 +69,7 @@ public class ManageAppointmentServlet extends HttpServlet{
 			try{
 					header = "templates/" + user.getHeader() + ".jsp";
 					Appointment a = new Appointment();
+					a.setappType(request.getParameter("apptype"));
 					a.setDescription(request.getParameter("description"));
 					a.setStudentid(request.getParameter("studentid"));
 					a.setAppointmentId(Integer.parseInt(request.getParameter("id2")));

@@ -47,7 +47,7 @@
 		xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4) {
-				if (xmlhttp.responseText == "0") {
+				if (xmlhttp.responseText === "0") {
 					document.getElementById("result").innerHTML = "Please check your current password";
 				} else {
 					window.location.href = "index";
@@ -83,7 +83,7 @@
 							name="newPassword">
 					</div>
 				</div>
-			</div>
+			</div>			
 			<button type="submit" id="submit" disabled class="btn btn-primary"
 				onclick="javascript:FormSubmit();">Submit</button>
 		</form>

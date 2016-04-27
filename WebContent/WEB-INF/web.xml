@@ -115,6 +115,16 @@
     <servlet-name>SendEmailServlet</servlet-name>
     <url-pattern>/notify</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Defaulter_SendEmailServlet</servlet-name>
+    <servlet-class>uta.mav.appoint.Defaulter_SendEmailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Defaulter_SendEmailServlet</servlet-name>
+    <url-pattern>/notify_defaulter</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <servlet-name>SendMeetingServlet</servlet-name>
     <servlet-class>uta.mav.appoint.SendMeetingServlet</servlet-class>
@@ -146,6 +156,14 @@
   <servlet-mapping>
     <servlet-name>FeedbackServlet</servlet-name>
     <url-pattern>/feedback</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <servlet-class>uta.mav.appoint.ForgotPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <url-pattern>/forgotpassword</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>BugReportServlet</servlet-name>
@@ -210,5 +228,29 @@
   <servlet-mapping>
     <servlet-name>DeleteAdvisorServlet</servlet-name>
     <url-pattern>/delete_advisor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <servlet-class>uta.mav.appoint.ChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <url-pattern>/changepassword</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CalendarSyncServlet</servlet-name>
+    <servlet-class>uta.mav.appoint.CalendarSyncServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalendarSyncServlet</servlet-name>
+    <url-pattern>/calendarsync</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddToWaitListServlet</servlet-name>
+    <servlet-class>uta.mav.appoint.AddToWaitListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddToWaitListServlet</servlet-name>
+    <url-pattern>/addtowaitlist</url-pattern>
   </servlet-mapping>
 </web-app>

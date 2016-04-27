@@ -19,6 +19,7 @@ public class Appointment implements Serializable{
 	int appointmentId;
 	String studentEmail;
 	String studentPhoneNumber;
+	String appType;
 	
 	/**
 	 * @return the pname
@@ -155,4 +156,13 @@ public class Appointment implements Serializable{
 	public void setStudentPhoneNumber(String studentPhoneNumber) {
 		this.studentPhoneNumber = studentPhoneNumber;
 	}
+	
+	public String getappType() {
+		return appType;
+	}
+	
+	public void setappType(String appType) {
+		this.appType = appType;
+	}
+	
 }

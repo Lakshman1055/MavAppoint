@@ -46,7 +46,7 @@ public class UpdatePasswordServlet extends HttpServlet {
 			}
 			header = "templates/header.jsp";
 		}
-		request.setAttribute("includeHeader", header);
+		request.setAttribute("includeHeader", header);		
 		request.getRequestDispatcher("/WEB-INF/jsp/views/updatepassword.jsp").forward(request, response);
 	}
 
@@ -59,8 +59,9 @@ public class UpdatePasswordServlet extends HttpServlet {
 
 		try {
 			header = "templates/" + user.getHeader() + ".jsp";
-			DatabaseManager dbm = new DatabaseManager();
-			int check = dbm.updateStudentPassword(user.getEmail(), currentPassword, newPassword, "1");
+			DatabaseManager dbm = new DatabaseManager();			
+			int check = 0;
+			check = dbm.updateStudentPassword(user.getEmail(), currentPassword, newPassword, "1");
 			response.setContentType("text/plain");
 			response.setHeader("Cache-Control", "no-cache");
 			response.setHeader("Pragma", "no-cache");

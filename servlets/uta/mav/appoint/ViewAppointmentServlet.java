@@ -52,7 +52,16 @@ public class ViewAppointmentServlet extends HttpServlet{
 			header = "templates/header.jsp";
 		}
 		
-		request.setAttribute("includeHeader", header);
+		if(user.getHeader().equals("student_header"))
+		{
+			request.setAttribute("usertype", "student");
+		}
+		else
+		{
+			request.setAttribute("usertype", "");
+		}
+		
+		request.setAttribute("includeHeader", header);		
 		request.getRequestDispatcher("/WEB-INF/jsp/views/view_appointments.jsp").forward(request, response);
 	}
 
@@ -73,6 +82,11 @@ public class ViewAppointmentServlet extends HttpServlet{
 				session.removeAttribute("appointments");
 				v = new AppointmentVisitor();
 				NotifyAppointment.sendCancelNotification(studentEmail); 
+				ArrayList<String> waitlist = dbm.getWaitlistUsers();
+				for(String email : waitlist)
+				{
+					NotifyAppointment.sendWaitlistNotification(email);
+				}
 				v = new AppointmentVisitor();
 				ArrayList<Object> appointments = user.accept(v,null,null);
 				if (appointments.size() != 0&&appointments != null){
@@ -89,6 +103,16 @@ public class ViewAppointmentServlet extends HttpServlet{
 		else{
 			header = "templates/header.jsp";
 		}
+		
+		if(user.getHeader().equals("student_header"))
+		{
+			request.setAttribute("usertype", "student");
+		}
+		else
+		{
+			request.setAttribute("usertype", "");
+		}
+		
 		request.setAttribute("includeHeader", header);
 		request.getRequestDispatcher("/WEB-INF/jsp/views/view_appointments.jsp").forward(request,response);
 	}

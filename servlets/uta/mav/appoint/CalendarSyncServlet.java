@@ -35,6 +35,7 @@ public class CalendarSyncServlet extends HttpServlet {
 		response.setContentType("text/calendar");
 		response.setHeader("Cache-Control", "no-cache");
 		response.setHeader("Pragma", "no-cache");
+		response.setHeader("content-disposition", "attachment; filename=" + userId + ".ics");
 		PrintWriter out = response.getWriter();
 		out.write(ical);
 		out.flush();

@@ -51,8 +51,9 @@
 												<span class="input-group-addon">
 													<i class="glyphicon glyphicon-lock"></i>
 												</span>
-												<input type="password" class="form-control" name=password>
+												<input type="password" class="form-control" name=password>												
 											</div>
+											<a href="forgotpassword">Forgot Password</a>
 										</div>
 										<div class="form-group">
 											<input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">

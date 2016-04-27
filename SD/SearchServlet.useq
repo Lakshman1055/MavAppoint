@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.9" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="uta.mav.appoint.SearchServlet" project="MavAppoint" 
+    file="/MavAppoint/servlets/uta/mav/appoint/SearchServlet.java" binary="false" label="searchServlet" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="174" y="0"/>    
+    <execution id="2">      
+      <position height="640" width="0" x="0" y="120"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="577" width="0" x="0" y="162"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="javax.servlet.http.HttpServletRequest" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" label="request" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="193"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="403"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="529"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="613"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="0" x="0" y="655"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="javax.servlet.http.HttpSession" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" label="session" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="235"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="319"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="uta.mav.appoint.login.LoginUser" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/login/LoginUser.java" binary="false" label="user" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="277"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="361"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="uta.mav.appoint.db.DatabaseManager" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/db/DatabaseManager.java" binary="false" label="db" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="445"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="487"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="java.io.PrintStream" project="MavAppoint" 
+    file="C:/Program Files/Java/jre1.8.0_91/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="571"/>    
+    </execution>  
+  </object>  
+  <object id="36" language="java" name="javax.servlet.RequestDispatcher" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="697"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getSession():javax.servlet.http.HttpSession" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="getAttribute(java.lang.String):java.lang.Object" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="LoginUser()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="setAttribute(java.lang.String,java.lang.Object):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="getHeader():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="DatabaseManager()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="searchAdvisor(java.lang.String):uta.mav.appoint.beans.Advisor" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="setAttribute(java.lang.String,java.lang.Object):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="printf(java.lang.String,java.lang.Object[]):java.io.PrintStream" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="setAttribute(java.lang.String,java.lang.Object):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="getRequestDispatcher(java.lang.String):javax.servlet.RequestDispatcher" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>
+</sequence-diagram>

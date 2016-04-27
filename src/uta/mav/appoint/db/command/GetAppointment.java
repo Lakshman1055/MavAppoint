@@ -15,14 +15,25 @@ public class GetAppointment extends SQLCmd{
 		email=e;
 	}
 	
+	public GetAppointment() {
+
+	}
+	
 	public void queryDB(){
 		try{
-		String command = "SELECT advising_date,advising_starttime,advising_endtime,appointment_type FROM appointments a,user u WHERE a.student_userid=u.userid AND u.email=? AND TIMESTAMP(?,?) <= TIMESTAMP(ADVISING_DATE, ADVISING_ENDTIME) ORDER BY advising_date,advising_starttime LIMIT 1";
-		PreparedStatement statement = conn.prepareStatement(command);
-		statement.setString(1,email);
-		statement.setString(2,date);
-		statement.setString(3,time);
-		res = statement.executeQuery();
+			String command = "";
+			if (email != null && !email.isEmpty()) {
+				command = "SELECT advising_date,advising_starttime,advising_endtime,appointment_type FROM appointments a,user u WHERE a.student_userid=u.userid AND u.email=? AND TIMESTAMP(?,?) <= TIMESTAMP(ADVISING_DATE, ADVISING_ENDTIME) ORDER BY advising_date,advising_starttime LIMIT 1";
+				PreparedStatement statement = conn.prepareStatement(command);
+				statement.setString(1, email);
+				statement.setString(2, date);
+				statement.setString(3, time);
+				res = statement.executeQuery();
+			} else {
+				command = "SELECT advising_date,advising_starttime,advising_endtime,appointment_type FROM appointments a,user u WHERE a.student_userid=u.userid";
+				PreparedStatement statement = conn.prepareStatement(command);
+				res = statement.executeQuery();
+			}
 		}
 		catch(Exception e){
 			System.out.println(e);

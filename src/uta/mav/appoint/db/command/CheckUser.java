@@ -20,6 +20,10 @@ public class CheckUser extends SQLCmd {
 		email = e;
 		password = p;
 	}
+	
+	public CheckUser(String e) {
+		email = e;
+	}
 
 	@Override
 	public void queryDB() {

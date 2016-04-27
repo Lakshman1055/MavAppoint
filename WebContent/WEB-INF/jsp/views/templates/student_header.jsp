@@ -1,9 +1,11 @@
+	<%@page import="uta.mav.appoint.login.LoginUser"%>
 	<%@include file="top_header.jsp" %>
 			<div>
 				<ul class="nav navbar-nav">
 				<li><a href="advising"><font style="color:#e67e22" size="3">  Advising </font></a></li>
 				<li><a href="appointments"><font style="color:#e67e22" size="3">  Appointments </font></a></li>
 				<li><a href="manage_profile"><font style="color:#e67e22" size="3">  Manage Profile </font></a></li>
+				<li><a href="calendarsync/<%=((LoginUser)session.getAttribute("user")).getEmail()%>"><font style="color:#e67e22" size="3">  Sync Calendar </font></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 				<li><a href="#"><span class="glyphicon glyphicon-time"><font style="color:#e67e22; margin-left:5px;" id="clock"></font></a></li>

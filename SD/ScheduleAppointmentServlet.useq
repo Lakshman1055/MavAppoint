@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.9" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="uta.mav.appoint.ScheduleAppointmentServlet" project="MavAppoint" 
+    file="/MavAppoint/servlets/uta/mav/appoint/ScheduleAppointmentServlet.java" binary="false" 
+    label="scheduleAppointmentServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="128" y="0"/>    
+    <execution id="2">      
+      <position height="1500" width="0" x="0" y="109"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="1437" width="0" x="0" y="151"/>    
+    </execution>    
+    <execution id="44">      
+      <position height="21" width="0" x="0" y="1001"/>    
+    </execution>    
+    <execution id="50">      
+      <position height="21" width="0" x="0" y="1137"/>    
+    </execution>  
+  </object>  
+  <object id="71" language="java" name="javax.servlet.http.HttpServletRequest" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" label="request" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="182"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="308"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="392"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="476"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="560"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="0" x="0" y="644"/>    
+    </execution>    
+    <execution id="32">      
+      <position height="21" width="0" x="0" y="728"/>    
+    </execution>    
+    <execution id="36">      
+      <position height="21" width="0" x="0" y="812"/>    
+    </execution>    
+    <execution id="38">      
+      <position height="21" width="0" x="0" y="854"/>    
+    </execution>    
+    <execution id="40">      
+      <position height="21" width="0" x="0" y="896"/>    
+    </execution>    
+    <execution id="52">      
+      <position height="21" width="0" x="0" y="1168"/>    
+    </execution>    
+    <execution id="60">      
+      <position height="21" width="0" x="0" y="1336"/>    
+    </execution>    
+    <execution id="66">      
+      <position height="21" width="0" x="0" y="1462"/>    
+    </execution>  
+  </object>  
+  <object id="72" language="java" name="uta.mav.appoint.beans.Appointment" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/beans/Appointment.java" binary="false" label="a" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="224"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="266"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="350"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="434"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="518"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="602"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="686"/>    
+    </execution>    
+    <execution id="34">      
+      <position height="21" width="0" x="0" y="770"/>    
+    </execution>    
+    <execution id="42">      
+      <position height="21" width="0" x="0" y="938"/>    
+    </execution>    
+    <execution id="46">      
+      <position height="21" width="0" x="0" y="1032"/>    
+    </execution>    
+    <execution id="48">      
+      <position height="21" width="0" x="0" y="1074"/>    
+    </execution>  
+  </object>  
+  <object id="73" language="java" name="uta.mav.appoint.db.DatabaseManager" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/db/DatabaseManager.java" binary="false" label="dbm" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="54">      
+      <position height="21" width="0" x="0" y="1210"/>    
+    </execution>    
+    <execution id="56">      
+      <position height="21" width="0" x="0" y="1252"/>    
+    </execution>  
+  </object>  
+  <object id="74" language="java" name="javax.servlet.http.HttpServletResponse" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" label="response" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="58">      
+      <position height="21" width="0" x="0" y="1294"/>    
+    </execution>    
+    <execution id="64">      
+      <position height="21" width="0" x="0" y="1420"/>    
+    </execution>  
+  </object>  
+  <object id="75" language="java" name="javax.servlet.RequestDispatcher" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="62">      
+      <position height="21" width="0" x="0" y="1378"/>    
+    </execution>  
+  </object>  
+  <object id="76" language="java" name="javax.servlet.RequestDispatcher" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="68">      
+      <position height="21" width="0" x="0" y="1504"/>    
+    </execution>  
+  </object>  
+  <object id="77" language="java" name="java.io.PrintStream" project="MavAppoint" 
+    file="C:/Program Files/Java/jre1.8.0_91/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="70">      
+      <position height="21" width="0" x="0" y="1546"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getSession():javax.servlet.http.HttpSession" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="Appointment()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="setAppointmentId(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="setStudentid(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="setDescription(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="setAppointmentType(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="setPname(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="setDescription(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>  
+  <message id="31" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="33" operation="setStudentPhoneNumber(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="34"/>  
+  </message>  
+  <message id="35" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>  
+  <message id="37" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="39" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="40"/>  
+  </message>  
+  <message id="41" operation="setAdvisingDate(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="42"/>  
+  </message>  
+  <message id="43" operation="convertDate(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="44"/>  
+  </message>  
+  <message id="45" operation="setAdvisingStartTime(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="46"/>  
+  </message>  
+  <message id="47" operation="setAdvisingEndTime(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="48"/>  
+  </message>  
+  <message id="49" operation="addTime(java.lang.String,java.lang.String,int):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>  
+  <message id="51" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="52"/>  
+  </message>  
+  <message id="53" operation="DatabaseManager()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="54"/>  
+  </message>  
+  <message id="55" operation="createAppointment(uta.mav.appoint.beans.Appointment,java.lang.String):java.lang.Boolean" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="56"/>  
+  </message>  
+  <message id="57" operation="setHeader(java.lang.String,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="58"/>  
+  </message>  
+  <message id="59" operation="getRequestDispatcher(java.lang.String):javax.servlet.RequestDispatcher" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="60"/>  
+  </message>  
+  <message id="61" operation="forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="62"/>  
+  </message>  
+  <message id="63" operation="setHeader(java.lang.String,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="64"/>  
+  </message>  
+  <message id="65" operation="getRequestDispatcher(java.lang.String):javax.servlet.RequestDispatcher" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="66"/>  
+  </message>  
+  <message id="67" operation="forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="68"/>  
+  </message>  
+  <message id="69" operation="printf(java.lang.String,java.lang.Object[]):java.io.PrintStream" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="70"/>  
+  </message>
+</sequence-diagram>

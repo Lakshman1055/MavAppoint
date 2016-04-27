@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.9" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="uta.mav.appoint.SendMeetingServlet" project="MavAppoint" 
+    file="/MavAppoint/servlets/uta/mav/appoint/SendMeetingServlet.java" binary="false" label="sendMeetingServlet" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="98" y="0"/>    
+    <execution id="2">      
+      <position height="1690" width="0" x="0" y="133"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="1627" width="0" x="0" y="175"/>    
+    </execution>  
+  </object>  
+  <object id="81" language="java" name="javax.servlet.ServletRequest" project="MavAppoint" 
+    file="E:/Eclipse Setup/apache-tomcat-8.0.33/lib/servlet-api.jar" binary="true" label="request" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="206"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="248"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="290"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="332"/>    
+    </execution>  
+  </object>  
+  <object id="82" language="java" name="java.rmi.server.UID" project="MavAppoint" 
+    file="C:/Program Files/Java/jre1.8.0_91/lib/rt.jar" binary="true" label="uid" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="374"/>    
+    </execution>  
+  </object>  
+  <object id="83" language="java" name="java.util.Hashtable" project="MavAppoint" 
+    file="C:/Program Files/Java/jre1.8.0_91/lib/rt.jar" binary="true" label="properties" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="416"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="458"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="500"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="542"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="584"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="626"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="0" x="0" y="668"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="710"/>    
+    </execution>  
+  </object>  
+  <object id="84" language="java" name="javax.mail.Session" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="32">      
+      <position height="21" width="0" x="0" y="752"/>    
+    </execution>  
+  </object>  
+  <object id="85" language="java" name="javax.mail.Authenticator" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="34">      
+      <position height="21" width="0" x="0" y="794"/>    
+    </execution>  
+  </object>  
+  <object id="86" language="java" name="javax.mail.internet.MimeMessage" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" label="message" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="36">      
+      <position height="21" width="0" x="0" y="836"/>    
+    </execution>    
+    <execution id="38">      
+      <position height="21" width="0" x="0" y="878"/>    
+    </execution>    
+    <execution id="40">      
+      <position height="21" width="0" x="0" y="920"/>    
+    </execution>    
+    <execution id="42">      
+      <position height="21" width="0" x="0" y="962"/>    
+    </execution>    
+    <execution id="44">      
+      <position height="21" width="0" x="0" y="1004"/>    
+    </execution>    
+    <execution id="48">      
+      <position height="21" width="0" x="0" y="1088"/>    
+    </execution>    
+    <execution id="56">      
+      <position height="21" width="0" x="0" y="1256"/>    
+    </execution>    
+    <execution id="60">      
+      <position height="21" width="0" x="0" y="1340"/>    
+    </execution>    
+    <execution id="78">      
+      <position height="21" width="0" x="0" y="1718"/>    
+    </execution>  
+  </object>  
+  <object id="87" language="java" name="javax.mail.internet.InternetAddress" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="46">      
+      <position height="21" width="0" x="0" y="1046"/>    
+    </execution>  
+  </object>  
+  <object id="88" language="java" name="javax.mail.internet.InternetAddress" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="50">      
+      <position height="21" width="0" x="0" y="1130"/>    
+    </execution>  
+  </object>  
+  <object id="89" language="java" name="uta.mav.appoint.db.DatabaseManager" project="MavAppoint" 
+    file="/MavAppoint/src/uta/mav/appoint/db/DatabaseManager.java" binary="false" label="dbm" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="52">      
+      <position height="21" width="0" x="0" y="1172"/>    
+    </execution>    
+    <execution id="54">      
+      <position height="21" width="0" x="0" y="1214"/>    
+    </execution>  
+  </object>  
+  <object id="90" language="java" name="javax.mail.internet.InternetAddress" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="58">      
+      <position height="21" width="0" x="0" y="1298"/>    
+    </execution>  
+  </object>  
+  <object id="91" language="java" name="javax.mail.internet.MimeBodyPart" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" label="messageBodyPart" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="62">      
+      <position height="21" width="0" x="0" y="1382"/>    
+    </execution>    
+    <execution id="64">      
+      <position height="21" width="0" x="0" y="1424"/>    
+    </execution>    
+    <execution id="66">      
+      <position height="21" width="0" x="0" y="1466"/>    
+    </execution>    
+    <execution id="68">      
+      <position height="21" width="0" x="0" y="1508"/>    
+    </execution>  
+  </object>  
+  <object id="92" language="java" name="javax.mail.util.ByteArrayDataSource" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="70">      
+      <position height="21" width="0" x="0" y="1550"/>    
+    </execution>  
+  </object>  
+  <object id="93" language="java" name="javax.activation.DataHandler" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/activation.jar" 
+    binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="72">      
+      <position height="21" width="0" x="0" y="1592"/>    
+    </execution>  
+  </object>  
+  <object id="94" language="java" name="javax.mail.internet.MimeMultipart" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" label="multipart" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="74">      
+      <position height="21" width="0" x="0" y="1634"/>    
+    </execution>    
+    <execution id="76">      
+      <position height="21" width="0" x="0" y="1676"/>    
+    </execution>  
+  </object>  
+  <object id="95" language="java" name="javax.mail.Transport" project="MavAppoint" 
+    file="F:/UTA/CSE/Special Topics in Advance Software Engineering - 6329/KCPC/MavAppoint-master/MavAppoint-master/WebContent/WEB-INF/lib/mail.jar" 
+    binary="true" label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="80">      
+      <position height="21" width="0" x="0" y="1760"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="getParameter(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="UID()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>  
+  <message id="31" operation="getDefaultInstance(java.util.Properties,javax.mail.Authenticator):javax.mail.Session" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="33" operation="Authenticator()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="34"/>  
+  </message>  
+  <message id="35" operation="MimeMessage(javax.mail.Session)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>  
+  <message id="37" operation="addHeaderLine(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="39" operation="addHeaderLine(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="40"/>  
+  </message>  
+  <message id="41" operation="addHeaderLine(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="42"/>  
+  </message>  
+  <message id="43" operation="setFrom(javax.mail.Address):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="44"/>  
+  </message>  
+  <message id="45" operation="InternetAddress(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="46"/>  
+  </message>  
+  <message id="47" operation="addRecipient(javax.mail.Message.RecipientType,javax.mail.Address):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="48"/>  
+  </message>  
+  <message id="49" operation="InternetAddress(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>  
+  <message id="51" operation="DatabaseManager()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="52"/>  
+  </message>  
+  <message id="53" operation="getNotificationStatus(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="54"/>  
+  </message>  
+  <message id="55" operation="addRecipient(javax.mail.Message.RecipientType,javax.mail.Address):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="56"/>  
+  </message>  
+  <message id="57" operation="InternetAddress(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="58"/>  
+  </message>  
+  <message id="59" operation="setSubject(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="60"/>  
+  </message>  
+  <message id="61" operation="MimeBodyPart()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="62"/>  
+  </message>  
+  <message id="63" operation="setHeader(java.lang.String,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="64"/>  
+  </message>  
+  <message id="65" operation="setHeader(java.lang.String,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="66"/>  
+  </message>  
+  <message id="67" operation="setDataHandler(javax.activation.DataHandler):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="68"/>  
+  </message>  
+  <message id="69" operation="ByteArrayDataSource(java.lang.String,java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="70"/>  
+  </message>  
+  <message id="71" operation="DataHandler(javax.activation.DataSource)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="72"/>  
+  </message>  
+  <message id="73" operation="MimeMultipart(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="74"/>  
+  </message>  
+  <message id="75" operation="addBodyPart(javax.mail.BodyPart):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="76"/>  
+  </message>  
+  <message id="77" operation="setContent(javax.mail.Multipart):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="78"/>  
+  </message>  
+  <message id="79" operation="send(javax.mail.Message):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="80"/>  
+  </message>
+</sequence-diagram>

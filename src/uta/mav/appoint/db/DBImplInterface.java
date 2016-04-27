@@ -33,6 +33,7 @@ public interface DBImplInterface {
 	public Boolean deleteTimeSlot(AllocateTime at) throws SQLException;
 	public Appointment getAppointment(String d, String t, String e) throws SQLException;
 	public ArrayList<Appointment> getAllAppointments(String todayDate, String tomorrowDate) throws SQLException;
+	public ArrayList<Appointment> getAllAppointments() throws SQLException;
 	public ArrayList<Appointment> getAllStudentAppointments(String userId) throws SQLException;
 	public Boolean createAdvisor(CreateAdvisorBean ca) throws SQLException;	
 	public String addAppointmentType(AdvisorUser user, AppointmentType at) throws SQLException;
@@ -50,4 +51,9 @@ public interface DBImplInterface {
 	public String getSetting(String setting) throws SQLException;
 	public boolean updateSetting(String setting, String value) throws SQLException;
 	public String getAppointmentById(String id) throws SQLException;
+	public GetSet getSecurityQuestions(String email) throws SQLException;
+	public int changePassword(String email, String newPassword, String validated) throws SQLException;
+	public int updateWaitlist(String username, String useremail) throws SQLException;
+	public ArrayList<String> getWaitlistUsers() throws SQLException;
+	public int updateDefaulterList(String useremail) throws SQLException;
 }

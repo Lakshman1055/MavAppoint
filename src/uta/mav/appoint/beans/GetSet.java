@@ -21,6 +21,10 @@ public class GetSet implements Serializable{
 	private String date;
 	private String starttime;
 	private String endtime;
+	private String securityQuestion1; 
+	private String securityQuestion2; 
+	private String securityQuestion3; 
+	
 	/**
 	 * @return the name
 	 */
@@ -121,6 +125,29 @@ public class GetSet implements Serializable{
 		this.emailAddress = emailAddress;
 	}
 	
+	public String getsecurityQuestion1() {
+		return securityQuestion1;
+	}
+	
+	public void setsecurityQuestion1(String securityQuestion1) {
+		this.securityQuestion1 = securityQuestion1;
+	}
+	
+	public String getsecurityQuestion2() {
+		return securityQuestion2;
+	}
+	
+	public void setsecurityQuestion2(String securityQuestion2) {
+		this.securityQuestion2 = securityQuestion2;
+	}
+	
+	public String getsecurityQuestion3() {
+		return securityQuestion3;
+	}
+	
+	public void setsecurityQuestion3(String securityQuestion3) {
+		this.securityQuestion3 = securityQuestion3;
+	}
 	
 }
 

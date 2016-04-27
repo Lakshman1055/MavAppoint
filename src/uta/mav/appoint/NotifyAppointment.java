@@ -116,4 +116,42 @@ public class NotifyAppointment implements Runnable {
 			mex.printStackTrace();
 		}
 	}
+	
+	public static void sendWaitlistNotification(String studentEmail) {
+		try {
+			String to = studentEmail;
+			String subject = "A new slot for appointment is available";
+			String body = "A student has cancelled his/her appointment. Please login to make new appointment.";
+			String from = "maverickappointments@gmail.com";
+			String pw = "gue#212!ns";
+			String host = "smtp.gmail.com";
+			String port = "465";
+			Properties properties = System.getProperties();
+			properties.put("mail.smtp.starttls.enable", "true");
+			properties.put("mail.smtp.host", host);
+			properties.put("mail.smtp.user", from);
+			properties.put("mail.smtp.password", pw);
+			properties.put("mail.smtp.port", port);
+			properties.put("mail.smtp.auth", "true");
+			properties.put("mail.smtp.socketFactory.port", "465");
+			properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+
+			Session session = Session.getDefaultInstance(properties,
+					new javax.mail.Authenticator(){
+						protected PasswordAuthentication getPasswordAuthentication(){
+							return new PasswordAuthentication("maverickappointments@gmail.com","gue#212!ns");
+						}
+			});
+			
+			javax.mail.Message message = new MimeMessage(session);
+			message.setFrom(new InternetAddress(from));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+			message.setText(body);
+			message.setSubject(subject);
+			Transport.send(message);
+			System.out.println("Message sent successfully.");
+		} catch (Exception mex) {
+			mex.printStackTrace();
+		}
+	}
 }

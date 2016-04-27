@@ -27,15 +27,13 @@ public class SendEmailServlet extends HttpServlet{
 		String to = (String)request.getParameter("to");
 		String subject = (String)request.getParameter("subject");
 		String body = (String)request.getParameter("body");
-		String from = "teststudent@mavs.uta.com";
-		String pw = "sFre192R!";
+		String from = "maverickappointments@gmail.com";		
 		String host = "smtp.gmail.com";
 		String port = "465";
 		Properties properties = System.getProperties();
 		properties.put("mail.smtp.starttls.enable","true");
 		properties.put("mail.smtp.host",host);
-		properties.put("mail.smtp.user",from);
-		properties.put("mail.smtp.password",pw);
+		properties.put("mail.smtp.user",from);		
 		properties.put("mail.smtp.port",port);
 		properties.put("mail.smtp.auth","true");
 		properties.put("mail.smtp.socketFactory.port","465");
@@ -47,7 +45,7 @@ public class SendEmailServlet extends HttpServlet{
 		Session session = Session.getDefaultInstance(properties,
 				new javax.mail.Authenticator(){
 					protected PasswordAuthentication getPasswordAuthentication(){
-						return new PasswordAuthentication("maverickappointments@gmail.com","sFre192R!");
+						return new PasswordAuthentication("maverickappointments@gmail.com","gue#212!ns");
 					}
 		});
 		response.setContentType("text/html");

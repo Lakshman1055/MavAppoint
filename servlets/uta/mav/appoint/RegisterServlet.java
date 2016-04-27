@@ -25,6 +25,9 @@ public class RegisterServlet extends HttpServlet {
 	String rpassword;
 	HttpSession session;
 	String role;
+	String securityQuestion1;
+	String securityQuestion2;
+	String securityQuestion3;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
@@ -44,6 +47,9 @@ public class RegisterServlet extends HttpServlet {
 		email = request.getParameter("emailAddress");
 		password = request.getParameter("password");
 		rpassword = request.getParameter("repeatPassword");
+		securityQuestion1 = request.getParameter("securityQuestion1");
+		securityQuestion2 = request.getParameter("securityQuestion2");
+		securityQuestion3 = request.getParameter("securityQuestion3");
 		role = "student";
 		// need to add check for maverick email address
 		// need to add check that both passwords match
@@ -55,6 +61,9 @@ public class RegisterServlet extends HttpServlet {
 		password = generateRandomPassword();
 		set.setPassword(password);
 		set.setRole(role);
+		set.setsecurityQuestion1(securityQuestion1);
+		set.setsecurityQuestion2(securityQuestion2);
+		set.setsecurityQuestion3(securityQuestion3);
 		try {
 			DatabaseManager dbm = new DatabaseManager();
 			int check = dbm.addUser(set);
